@@ -2,7 +2,7 @@
 
 ![Let's use this flow for the login experience]()
 #	   Long-short term memory
-![figure](img/LSTM3-C-line.png)
+![figure](C:\Users\xinyu\Desktop\picture\lstm\lstm6)
 #          Code
 ##         Machine learning code
 <code>
