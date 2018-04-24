@@ -2,7 +2,7 @@
 
 ![Let's use this flow for the login experience]()
 #	   Long-short term memory
-![figure](/lingsama/ling/blob/master/pictures/lstm6.png?raw=true)
+![figure](img/LSTM3-C-line.png)
 #          Code
 ##         Machine learning code
 <code>
