@@ -1,14 +1,11 @@
-#Recommender System for Stock Trading and Electronic Trading Alerts Digital Assistant with friendly GUI
+#          Recommender System for Stock Trading and Electronic Trading Alerts Digital Assistant with friendly GUI
 
-![Let's use this flow for the login experience](https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAwhzxJ.img?h=1142&w=728&m=6&q=60&o=f&l=f&x=613&y=242)
+![Let's use this flow for the login experience]()
 
-#Code
+#          Code
 <code>
-	    # -*- coding: utf-8 -*-
-    """
-    statistical machine learning algorithms for this problem
-    http://scikit-learn.org
-    """
+    # -*- coding: utf-8 -*-
+    
     # Import dependencies
     import seaborn as sns
     import matplotlib.pyplot as plt
