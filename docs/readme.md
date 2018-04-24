@@ -1,7 +1,8 @@
 #          Recommender System for Stock Trading and Electronic Trading Alerts Digital Assistant with friendly GUI
 
 ![Let's use this flow for the login experience]()
-
+#	   Long-short term memory
+![figure](/lingsama/ling/blob/master/pictures/lstm6.png?raw=true)
 #          Code
 ##         Machine learning code
 <code>
