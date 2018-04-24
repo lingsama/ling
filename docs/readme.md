@@ -3,20 +3,20 @@
 ![Let's use this flow for the login experience](https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAwhzxJ.img?h=1142&w=728&m=6&q=60&o=f&l=f&x=613&y=242)
 ##Code
 <code>
-# -*- coding: utf-8 -*-
-"""
-statistical machine learning algorithms for this problem
-http://scikit-learn.org
-"""
-# Import dependencies
-import seaborn as sns
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
-
-# Read data
-df = pd.read_csv('Combined_News_DJIA1.csv', parse_dates=True, index_col=0)
-#print('read csv')
+	# -*- coding: utf-8 -*-
+	"""
+	statistical machine learning algorithms for this problem
+	http://scikit-learn.org
+	"""
+	# Import dependencies
+	import seaborn as sns
+	import matplotlib.pyplot as plt
+	import numpy as np
+	import pandas as pd
+	
+	# Read data
+	df = pd.read_csv('Combined_News_DJIA1.csv', parse_dates=True, index_col=0)
+	#print('read csv')
 # Plot class distribution
 sns.countplot(x='Label', data=df)
 #????
@@ -145,9 +145,9 @@ print('SVM:',list_svm)
 print('VC:',list_vc)
 print('LF:',list_lf)
 
-df_all = pd.DataFrame({"rf":list_rf,"knn":list_knn,"svm":list_svm,"vc":list_vc,"lf":list_lf,"i":list_i})
-print(df_all)
-sns.jointplot(x='i',y='rf',data=df_all)
-plt.show()
+	df_all = pd.DataFrame({"rf":list_rf,"knn":list_knn,"svm":list_svm,"vc":list_vc,"lf":list_lf,"i":list_i})
+	print(df_all)
+	sns.jointplot(x='i',y='rf',data=df_all)
+	plt.show()
 
 </code>
