@@ -2,7 +2,8 @@
 
 ![Let's use this flow for the login experience](https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAwhzxJ.img?h=1142&w=728&m=6&q=60&o=f&l=f&x=613&y=242)
 ##Code
-{ {{# -*- coding: utf-8 -*-
+<code>
+# -*- coding: utf-8 -*-
 """
 statistical machine learning algorithms for this problem
 http://scikit-learn.org
@@ -148,4 +149,5 @@ df_all = pd.DataFrame({"rf":list_rf,"knn":list_knn,"svm":list_svm,"vc":list_vc,"
 print(df_all)
 sns.jointplot(x='i',y='rf',data=df_all)
 plt.show()
-}} }
+
+</code>
