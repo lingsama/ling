@@ -435,7 +435,7 @@ Logistic Regression | 48.94%
     #    ypred = model.predict(xtest)[0][0]
     #    sent = " ".join([wordsList[x] for x in xtest[0] if x != 0])
     #    print(' {}      {}     {}'.format(int(round(ypred)), int(ylabel), sent))
-    #Accuracy: 54.9
+    #Accuracy: 53.9
     
     
     maxSeqLength = 600
@@ -512,5 +512,5 @@ Logistic Regression | 48.94%
     for i in range(iterations):
         Xtrain, Xtest, ytrain, ytest = get_Train_Test_Batch();
         print("Accuracy for this batch:", (sess.run(accuracy, {input_data: Xtest, labels: ytest})) * 100)
-    #Accuracy for this batch: 37.5
+    #Accuracy for this batch: 47.5
 </code> 
