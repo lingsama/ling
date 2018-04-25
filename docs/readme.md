@@ -5,7 +5,7 @@
 
 Before running the python code, you'll first need to download all data we'll be using. 
 This data is located in the Combined_News_DJIA1.csv. 
-
+# 
 Requirements and Installation
 
 In order to run the Python code, you'll need the following libraries.
