@@ -57,7 +57,11 @@ Logistic Regression | 48.94%
 
 #	   Long-short term memory
 ![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm6.png)
-![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm7.png)
+![structure of LSTM](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm7.png)
+## The core idea behind LSTMs
+The key to LSTMs is the cell state, the horizontal line running through the top of the diagram.
+The cell state is kind of like a conveyor belt. It runs straight down the entire chain, with only some minor linear interactions. It’s very easy for information to just flow along it unchanged.
+The LSTM does have the ability to remove or add information to the cell state, carefully regulated by structures called gates.
 ![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm8.png)
 ![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm9.png)
 ![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm10.png)
