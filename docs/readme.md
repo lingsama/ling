@@ -14,9 +14,7 @@ Requirements and Installation
 In order to run the Python code, you'll need the following libraries.
 
 
-1. [TensorFlow](http://www.tensorflow.org/) version 1.1 
-(Currently not supported for 1.2, 1.3, 1.4 etc but if someone wants to submit a pull request, I'd be open to that.)
-
+1. [TensorFlow](http://www.tensorflow.org/)
 2. [NumPy](http://www.numpy.org/)
 
 3. [Matplotlib](http://www.matplotlib.org/)
@@ -36,26 +34,11 @@ Follow the platform-specific TensorFlow installation instructions.
 Be sure to follow the "Installing with Anaconda" process, and create a Conda environment named tensorflow.
 
 
-If you aren't still inside your Conda TensorFlow environment, 
-enter it by opening your terminal and typing
-
-source activate tensorflow
-
-If you haven't done so already, 
-download and unzip this entire repository from GitHub, either interactively, 
-or by entering
-
-git clone 
-https://github.com/zhengwang125/Sentiment-Analysis.git
-
-Use cd to navigate into the top directory of the repo on your machine
-
-# 
 Deep Learning
 
 **Sentiment Analysis** is a classic problem in RNN with LSTM model. 
 We try to implement it in keras framework and we also prepared a tensorflow version. 
-The best accuracy is about 47.9%.
+The best accuracy is about 53.9%.
 
 # 
 Statistical Machine Learning
