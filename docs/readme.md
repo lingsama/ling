@@ -55,9 +55,8 @@ Voting | 50.26%
 Logistic Regression | 48.94%
 
 
-![Let's use this flow for the login experience]()
 #	   Long-short term memory
-![figure](C:\Users\xinyu\Desktop\picture\lstm\lstm6.png)
+![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm6.png)
 #          Code
 ##         Machine learning code
 <code>
