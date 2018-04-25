@@ -5,8 +5,8 @@
 
 Before running the python code, you'll first need to download all data we'll be using. 
 This data is located in the Combined_News_DJIA1.csv. 
-# 
-Requirements and Installation
+## Requirements and Installation
+
 
 In order to run the Python code, you'll need the following libraries.
 
@@ -37,8 +37,9 @@ Deep Learning
 We try to implement it in keras framework and we also prepared a tensorflow version. 
 The best accuracy is about 53.9%.
 
-# 
-Statistical Machine Learning
+
+## Statistical Machine Learning
+
 
 **Random Forest**, **K Nearest Neighbors**, **SVM**, 
 **Voting** , **Logistic Regression** are also used for this prediction. 
