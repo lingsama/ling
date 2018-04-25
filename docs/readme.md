@@ -99,7 +99,6 @@ Finally, we need to decide what we’re going to output. This output will be based
     #print('read csv')
     # Plot class distribution
     sns.countplot(x='Label', data=df)
-    #????
     #plt.show()
     
     # Check the data
