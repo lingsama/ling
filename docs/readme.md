@@ -1,4 +1,4 @@
-# Recommender System for Stock Trading and Electronic Trading Alerts Digital Assistant with friendly GUI
+Ôªø# Recommender System for Stock Trading and Electronic Trading Alerts Digital Assistant with friendly GUI
 
 
 # Downloading Data
@@ -62,25 +62,25 @@ Logistic Regression | 48.94%
 
 ## The core idea behind LSTMs
 The key to LSTMs is the cell state, the horizontal line running through the top of the diagram.
-The cell state is kind of like a conveyor belt. It runs straight down the entire chain, with only some minor linear interactions. Itís very easy for information to just flow along it unchanged.
+The cell state is kind of like a conveyor belt. It runs straight down the entire chain, with only some minor linear interactions. It‚Äôs very easy for information to just flow along it unchanged.
 The LSTM does have the ability to remove or add information to the cell state, carefully regulated by structures called gates.
 ![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm8.png)
 Gates are a way to optionally let information through. They are composed out of a sigmoid neural net layer and a pointwise multiplication operation.
-The sigmoid layer outputs numbers between zero and one, describing how much of each component should be let through. A value of zero means ìlet nothing through,î while a value of one means ìlet everything through!î
+The sigmoid layer outputs numbers between zero and one, describing how much of each component should be let through. A value of zero means ‚Äúlet nothing through,‚Äù while a value of one means ‚Äúlet everything through!‚Äù
 An LSTM has three of these gates, to protect and control the cell state.
 ![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm9.png)
 ## Step-by-Step LSTM Walk Through
-The first step in our LSTM is to decide what information weíre going to throw away from the cell state. This decision is made by a sigmoid layer called the ìforget gate layer.î It looks at h(t-1) and x(t), and outputs a number between 0 and 1 for each number in the cell state C(t-1). A 1 represents ìcompletely keep thisî while a 0 represents ìcompletely get rid of this.î
-Letís go back to our example of a language model trying to predict the next word based on all the previous ones. In such a problem, the cell state might include the gender of the present subject, so that the correct pronouns can be used. When we see a new subject, we want to forget the gender of the old subject.
+The first step in our LSTM is to decide what information we‚Äôre going to throw away from the cell state. This decision is made by a sigmoid layer called the ‚Äúforget gate layer.‚Äù It looks at h(t-1) and x(t), and outputs a number between 0 and 1 for each number in the cell state C(t-1). A 1 represents ‚Äúcompletely keep this‚Äù while a 0 represents ‚Äúcompletely get rid of this.‚Äù
+Let‚Äôs go back to our example of a language model trying to predict the next word based on all the previous ones. In such a problem, the cell state might include the gender of the present subject, so that the correct pronouns can be used. When we see a new subject, we want to forget the gender of the old subject.
 
 ![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm10.png)
 
-The next step is to decide what new information weíre going to store in the cell state. This has two parts. First, a sigmoid layer called the ìinput gate layerî decides which values weíll update. Next, a tanh layer creates a vector of new candidate values, that could be added to the state. In the next step, weíll combine these two to create an update to the state.
-In the example of our language model, weíd want to add the gender of the new subject to the cell state, to replace the old one weíre forgetting.
+The next step is to decide what new information we‚Äôre going to store in the cell state. This has two parts. First, a sigmoid layer called the ‚Äúinput gate layer‚Äù decides which values we‚Äôll update. Next, a tanh layer creates a vector of new candidate values, that could be added to the state. In the next step, we‚Äôll combine these two to create an update to the state.
+In the example of our language model, we‚Äôd want to add the gender of the new subject to the cell state, to replace the old one we‚Äôre forgetting.
 
 ![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm11.png)
 
-Finally, we need to decide what weíre going to output. This output will be based on our cell state, but will be a filtered version. First, we run a sigmoid layer which decides what parts of the cell state weíre going to output. Then, we put the cell state through tanh (to push the values to be between -1 and 1) and multiply it by the output of the sigmoid gate, so that we only output the parts we decided to.
+Finally, we need to decide what we‚Äôre going to output. This output will be based on our cell state, but will be a filtered version. First, we run a sigmoid layer which decides what parts of the cell state we‚Äôre going to output. Then, we put the cell state through tanh (to push the values to be between -1 and 1) and multiply it by the output of the sigmoid gate, so that we only output the parts we decided to.
 
 ![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm12.png)
 #          Code
