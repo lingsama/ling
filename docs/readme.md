@@ -57,6 +57,12 @@ Logistic Regression | 48.94%
 
 #	   Long-short term memory
 ![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm6.png)
+![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm7.png)
+![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm8.png)
+![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm9.png)
+![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm10.png)
+![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm11.png)
+![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm12.png)
 #          Code
 ##         Machine learning code
 <code>
