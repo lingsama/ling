@@ -54,7 +54,7 @@ SVM     | 48.14%
 Voting | 50.26%
 Logistic Regression | 48.94%
 
-1[400 times Random Forest](https://raw.githubusercontent.com/lingsama/ling/master/pictures/RF-400.png)
+![400 times Random Forest](https://raw.githubusercontent.com/lingsama/ling/master/pictures/RF-400.png)
 
 #	   Long-short term memory
 ![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm6.png)
@@ -70,12 +70,12 @@ The sigmoid layer outputs numbers between zero and one, describing how much of e
 An LSTM has three of these gates, to protect and control the cell state.
 ![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm9.png)
 ## Step-by-Step LSTM Walk Through
-The first step in our LSTM is to decide what information we’re going to throw away from the cell state. This decision is made by a sigmoid layer called the “forget gate layer.” It looks at h_(??-1) and ??_??, and outputs a number between 0 and 1 for each number in the cell state ??_(??-1). A 1 represents “completely keep this” while a 0 represents “completely get rid of this.”
+The first step in our LSTM is to decide what information we’re going to throw away from the cell state. This decision is made by a sigmoid layer called the “forget gate layer.” It looks at h(t-1) and x(t), and outputs a number between 0 and 1 for each number in the cell state C(t-1). A 1 represents “completely keep this” while a 0 represents “completely get rid of this.”
 Let’s go back to our example of a language model trying to predict the next word based on all the previous ones. In such a problem, the cell state might include the gender of the present subject, so that the correct pronouns can be used. When we see a new subject, we want to forget the gender of the old subject.
 
 ![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm10.png)
 
-The next step is to decide what new information we’re going to store in the cell state. This has two parts. First, a sigmoid layer called the “input gate layer” decides which values we’ll update. Next, a tanh layer creates a vector of new candidate values, ?? ~_??, that could be added to the state. In the next step, we’ll combine these two to create an update to the state.
+The next step is to decide what new information we’re going to store in the cell state. This has two parts. First, a sigmoid layer called the “input gate layer” decides which values we’ll update. Next, a tanh layer creates a vector of new candidate values, that could be added to the state. In the next step, we’ll combine these two to create an update to the state.
 In the example of our language model, we’d want to add the gender of the new subject to the cell state, to replace the old one we’re forgetting.
 
 ![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm11.png)
