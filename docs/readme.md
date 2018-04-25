@@ -54,6 +54,7 @@ SVM     | 48.14%
 Voting | 50.26%
 Logistic Regression | 48.94%
 
+1[400 times Random Forest](https://raw.githubusercontent.com/lingsama/ling/master/pictures/RF-400.png)
 
 #	   Long-short term memory
 ![](https://raw.githubusercontent.com/lingsama/ling/master/pictures/lstm6.png)
